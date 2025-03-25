@@ -1,2 +1,4 @@
-FROM amazon/aws-cli:latest
+FROM amazon/aws-cli
 RUN apk add --no-cache docker-cli jq
+RUN aws --version && docker --version && jq --version
+CMD ["sh"]
