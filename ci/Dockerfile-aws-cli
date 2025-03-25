@@ -1,4 +1,4 @@
-FROM amazon/aws-cli
+FROM amazonlinux:2
 RUN yum update -y && yum install -y amazon-linux-extras
 RUN amazon-linux-extras enable docker
 RUN yum install -y docker
