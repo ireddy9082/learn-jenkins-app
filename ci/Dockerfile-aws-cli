@@ -1,4 +1,2 @@
-FROM amazonlinux:2023
-RUN dnf update -y
-RUN dnf install -y aws-cli docker
-RUN dnf install jq -y
+FROM amazon/aws-cli:latest
+RUN apk add --no-cache docker-cli jq
