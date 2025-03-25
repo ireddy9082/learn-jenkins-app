@@ -1,5 +1,5 @@
 FROM amazonlinux:2
-RUN yum update -y && yum install -y amazon-linux-extras
+RUN yum install -y amazon-linux-extras
 RUN amazon-linux-extras enable docker
 RUN yum install -y docker
 RUN yum install jq -y
