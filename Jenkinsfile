@@ -53,7 +53,7 @@ pipeline {
                 docker {
                     image 'my-aws-cli'
                     reuseNode true
-                    args "--entrypoint='' --network host"
+                    args "--entrypoint=''"
                 }
             }
 
